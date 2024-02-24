@@ -1,12 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh '''#!/bin/bash
 
 echo "Hello World"
-cat "sheekaBoomb" > newfile.txt'''
+cat /etc/fstab > newfile.txt'''
       }
     }
 
